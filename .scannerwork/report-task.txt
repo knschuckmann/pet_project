@@ -1,0 +1,6 @@
+projectKey=petproject
+serverUrl=http://localhost:9000
+serverVersion=7.9.2.30863
+dashboardUrl=http://localhost:9000/dashboard?id=petproject
+ceTaskId=AW9qlNZH6PLNU8cQ2WCN
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AW9qlNZH6PLNU8cQ2WCN
