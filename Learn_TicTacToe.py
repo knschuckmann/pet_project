@@ -26,3 +26,5 @@ class Learn_TicTacToe(nn.Module):
     
     def name(self):
         return "LearnTicTacToe"
+    
+   

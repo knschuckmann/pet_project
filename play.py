@@ -8,53 +8,29 @@ Created on Thu Jan  9 23:02:01 2020
 from TicTacToe_Game import TicTacToe_Game
 
 if __name__ == '__main__':
-    print('Welcome to Tic Tac Toe!')
-    
     tictactoe_game = TicTacToe_Game() # load game class
+    print('Welcome to Tic Tac Toe!')
     while True:
         # Reset the board    
-        theBoard = tictactoe_game.resetBoard()
+        theBoard = tictactoe_game.reset_board()
         
-        playerLetter, computerLetter, turn = tictactoe_game.Toss_and_Letter()
+        letter , turn = tictactoe_game.turn_and_letter_decission()
  
-        print('The ' + turn + ' will go first.')    
-        gameIsPlaying = True
+        print('The ' + turn[0] + ' will go first.')    
         
-        while gameIsPlaying:    
-            if turn == 'player':    
+        while tictactoe_game.get_game_flag() == 'nothing': 
+            
+            if turn[0] == 'player':    
                 # Player’s turn.    
-                tictactoe_game.drawBoard(theBoard)    
-                move = getPlayerMove(theBoard)    
-                makeMove(theBoard, playerLetter, move)    
-        
-                if isWinner(theBoard, playerLetter):    
-                    drawBoard(theBoard)    
-                    print('Hooray! You have won the game!')    
-                    gameIsPlaying = False    
-                else:    
-                    if isBoardFull(theBoard):    
-                        drawBoard(theBoard)    
-                        print('The game is a tie!')    
-                        break    
-                    else:    
-                        turn = 'computer'    
+                tictactoe_game.drawboard(theBoard)    
+                move = tictactoe_game.getPlayerMove(theBoard)    
+                tictactoe_game.makeMove(letter[0], theBoard, move)
+                tictactoe_game.determine_winner_or_tie(letter[0], theBoard)
             else:    
                 # Computer’s turn.    
-                move = getComputerMove(theBoard, computerLetter)    
-                makeMove(theBoard, computerLetter, move)    
-        
-                if isWinner(theBoard, computerLetter):    
-                    drawBoard(theBoard)    
-                    print('The computer has beaten you! You lose.')    
-                    gameIsPlaying = False    
-                else:    
-                    if isBoardFull(theBoard):    
-                        drawBoard(theBoard)    
-                        print('The game is a tie!')    
-                        break    
-                    else:    
-                        turn = 'player'    
-        
-        if not playAgain():    
+                move = tictactoe_game.getComputerMove(theBoard)    
+                tictactoe_game.makeMove(letter[1], theBoard, move)
+                tictactoe_game.determine_winner_or_tie(letter[1], theBoard)
+                
+        if not tictactoe_game.playAgain():   
             break
-    
