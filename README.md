@@ -1,6 +1,5 @@
 # Pet Project for Advanced Software Engineering WS 2018/19
-This Pet project was taken from a website <https://inventwithpython.com/chapter10.html> and 
-My pet project for Advanced Software Engineering was inspired by a kaggle notebook. It is a Reinforcement Learning program for the game Tic Tac Toe. The program creates a neural network model for turn evaluations and is trained while playing against a programmed opponent. In the end a user can play against the trained model. In this documentation I will show UML diagrams and some metrics for the code, as well as some clean code concepts. 
+This Pet project was inspired by a tic tac toe game from this particular website <https://inventwithpython.com/chapter10.html>. It is based on a simple model and the evaluation of human kind  playing this game over the time. Thus the turn of computer follows this findings. In this documentation I will show UML diagrams and some metrics for the code, as well as some clean code concepts.
 
 # UML Diagrams
 
