@@ -5,14 +5,11 @@ Created on Sat Jan 11 22:13:26 2020
 
 @author: Kostja
 """
-from Learn_TicTacToe import Learn_TicTacToe()
+from Learn_TicTacToe import Learn_TicTacToe
 
 
 model = Learn_TicTacToe()
 
-
-
-model()
 def getComputerMove(board, computerLetter):
     
     

@@ -86,7 +86,7 @@ def getPlayerMove(board):
         
     return int(move)
 
-def chooseRandomMoveFromList(board, movesList):
+def choose_RandomMoveFromList(board, movesList):
     # Returns a valid move from the passed list on the passed board.    
     # Returns None if there is no valid move.
     possibleMoves = []
