@@ -129,15 +129,9 @@ class TicTacToeGame(object):
     def __is_winner(self, letter, board):
         # Given a board and a player’s letter, this function returns True if that player has won.   
         # We use bo instead of board and le instead of letter so we don’t have to type as much.
-        return ((board[self.__possible_moves['7']] == letter and board[self.__possible_moves['8']] == letter and board[self.__possible_moves['9']] == letter) or # across the top                                            
-        (board[self.__possible_moves['4']] == letter and board[self.__possible_moves['5']] == letter and board[self.__possible_moves['6']] == letter) or # across the middle
-        (board[self.__possible_moves['1']] == letter and board[self.__possible_moves['2']] == letter and board[self.__possible_moves['3']] == letter) or # across the bottom    
-        (board[self.__possible_moves['7']] == letter and board[self.__possible_moves['4']] == letter and board[self.__possible_moves['1']] == letter) or # down the left side    
-        (board[self.__possible_moves['8']] == letter and board[self.__possible_moves['5']] == letter and board[self.__possible_moves['2']] == letter) or # down the middle    
-        (board[self.__possible_moves['9']] == letter and board[self.__possible_moves['6']] == letter and board[self.__possible_moves['3']] == letter) or # down the right side    
-        (board[self.__possible_moves['7']] == letter and board[self.__possible_moves['5']] == letter and board[self.__possible_moves['3']] == letter) or # diagonal    
-        (board[self.__possible_moves['9']] == letter and board[self.__possible_moves['5']] == letter and board[self.__possible_moves['1']] == letter)) # diagonal
-
+        return ((board[0] == letter).all() or (board[1] == letter).all() or (board[2] == letter).all() or # accross top, middel, bottom
+                (np.diag(board) == letter).all() or (np.diag(np.fliplr(board)) == letter).all() or # across diagonals 
+                (board.T[0] == letter).all() or (board.T[1] == letter).all() or (board.T[2] == letter).all()) # across down left, middle, right
     
     def determine_winner_or_tie(self, letter, board):       
         if self.__is_winner(letter, board):
