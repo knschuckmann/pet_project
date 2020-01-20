@@ -6,8 +6,13 @@ This Pet project was inspired by a tic tac toe game from this particular website
 # Metrics
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=knschuckmann_pet_project&metric=alert_status)](https://sonarcloud.io/dashboard?id=knschuckmann_pet_project)
 
-
+# Travis CI
 [![Build Status](https://travis-ci.com/knschuckmann/pet_project.svg?branch=master)](https://travis-ci.com/knschuckmann/pet_project)
+
+# Code Climate
+[![Maintainability](https://api.codeclimate.com/v1/badges/883bec08099168100c99/maintainability)](https://codeclimate.com/github/knschuckmann/pet_project/maintainability)
+
+Improved code climate from F to D
 
 # Clean Code
 
