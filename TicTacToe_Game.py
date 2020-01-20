@@ -3,8 +3,6 @@
 """
 Created on Thu Jan  9 11:50:15 2020
 
-einfach mal ausprobiere
-
 @author: Kostja
 """
 import numpy as np
@@ -118,7 +116,7 @@ class TicTacToeGame(object):
         move = ' '    
         while move not in '1 2 3 4 5 6 7 8 9'.split() or not self.__is_space_free(move, board):   
             print('What is your next move?(1-9) \n\nBotom left is 1 and top right is 9')    
-            move = input().format()
+            move = input()
             
         return str(move)
     
@@ -156,7 +154,6 @@ class TicTacToeGame(object):
                 self.__set_game_flag('tie')
             else:    
                 self.set_turn(reverse = True)
-                
     
     
     def get_computer_move(self, board):

@@ -7,7 +7,7 @@ This Pet project was inspired by a tic tac toe game from this particular website
 [![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=pet_project&metric=alert_status)](http://localhost:9000/dashboard?id=pet_project)
 
 # Clean Code
-dsadad
+
 # Dsl
 
 # Functional Programing 
