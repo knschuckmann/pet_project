@@ -3,13 +3,15 @@
 """
 Created on Thu Jan  9 11:50:15 2020
 
+einfach mal ausprobiere
+
 @author: Kostja
 """
 import numpy as np
 import random
 import copy
 
-class TicTacToe_Game(object):
+class TicTacToeGame(object):
     ####################### CONSTRUCTOR #######################
     def __init__(self):
         self.board = self.reset_board() 
@@ -84,7 +86,7 @@ class TicTacToe_Game(object):
     
     
     # make move on Board
-    def makeMove(self, letter, board, move):
+    def make_move(self, letter, board, move):
         if move in self.__possible_moves:
             board[self.__possible_moves[move]] = letter
        
@@ -111,22 +113,22 @@ class TicTacToe_Game(object):
         self.__set_game_flag('nothing')
     
     
-    def getPlayerMove(self, board):
+    def get_player_move(self, board):
         # Let the player type in their move.    
         move = ' '    
-        while move not in '1 2 3 4 5 6 7 8 9'.split() or not self.__isSpaceFree(move, board):   
+        while move not in '1 2 3 4 5 6 7 8 9'.split() or not self.__is_space_free(move, board):   
             print('What is your next move?(1-9) \n\nBotom left is 1 and top right is 9')    
-            move = input()
+            move = input().format()
             
         return str(move)
     
-    def __isSpaceFree(self, move, board):
+    def __is_space_free(self, move, board):
         # Return true if the passed move is free on the passed board.    
         return board[self.__possible_moves[move]] == ' '
     
 
        
-    def __isWinner(self, letter, board):
+    def __is_winner(self, letter, board):
         # Given a board and a player’s letter, this function returns True if that player has won.   
         # We use bo instead of board and le instead of letter so we don’t have to type as much.
         return ((board[self.__possible_moves['7']] == letter and board[self.__possible_moves['8']] == letter and board[self.__possible_moves['9']] == letter) or # across the top                                            
@@ -140,7 +142,7 @@ class TicTacToe_Game(object):
 
     
     def determine_winner_or_tie(self, letter, board):       
-        if self.__isWinner(letter, board):
+        if self.__is_winner(letter, board):
             self.drawboard(board)
             if self.get_turn()[0] == 'player' :
                 print('Hooray! You have won the game!') 
@@ -155,39 +157,36 @@ class TicTacToe_Game(object):
             else:    
                 self.set_turn(reverse = True)
                 
-        #return self.get_game_flag()
     
     
-    def getComputerMove(self, board):
-     
-        playerLetter, computerLetter = self.get_choosen_letter()
+    def get_computer_move(self, board):
         
         # Here is our algorithm for our Tic Tac Toe AI:    
         # First, check if someone can win in the next move 
         for i in range(1,10):
             board_copy = copy.copy(board)
-            if self.__isSpaceFree(str(i), board_copy ):
+            if self.__is_space_free(str(i), board_copy ):
                 for j,letter in enumerate(self.get_choosen_letter()):
-                    self.makeMove(letter, board_copy, str(i))    
-                    if self.__isWinner(letter, board_copy):
+                    self.make_move(letter, board_copy, str(i))    
+                    if self.__is_winner(letter, board_copy):
                         return str(i)
             
         # Try to take one of the corners, if they are free. 
         for i, numb in enumerate('1 3 7 9'.split()):
-            move = self.__isSpaceFree(numb, board)    
+            move = self.__is_space_free(numb, board)    
             if move == True:    
                 return numb
                     
         # Try to take the center, if it is free.    
-        if self.__isSpaceFree('5'):    
+        if self.__is_space_free('5'):    
             return '5'    
             
         # Move on one of the sides.    
         for i, numb in enumerate('2 4 6 8'.split()):
-            move[i] = self.__isSpaceFree(numb, board)  
+            move[i] = self.__is_space_free(numb, board)  
         return random.choice(move)
 
-    def playAgain(self):
+    def play_again(self):
         # This function returns True if the player wants to play again, otherwise it returns False.
         print('Do you want to play again? (yes or no)')
         self.reset()
