@@ -10,9 +10,6 @@ ipython-genutils==0.2.0
 jedi==0.15.2
 jupyter-client==5.3.4
 jupyter-core==4.6.1
-mkl-fft==1.0.15
-mkl-random==1.1.0
-mkl-service==2.3.0
 numpy==1.17.4
 parso==0.5.2
 pexpect==4.7.0
