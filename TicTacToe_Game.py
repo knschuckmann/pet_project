@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jan  9 11:50:15 2020
-test e
 
 @author: Kostja
 """
