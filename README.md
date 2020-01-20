@@ -1,3 +1,18 @@
+# Pet Project for Advanced Software Engineering WS 2018/19
+This Pet project was inspired by a tic tac toe game from this particular website <https://inventwithpython.com/chapter10.html>. It is based on a simple model and the evaluation of human kind  playing this game over the time. Thus the turn of computer follows this findings. In this documentation I will show UML diagrams and some metrics for the code, as well as some clean code concepts.
+
+# UML Diagrams
+
+# Metrics
+[![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=pet_project&metric=alert_status)](http://localhost:9000/dashboard?id=pet_project)
+
+# Clean Code
+dsadad
+# Dsl
+
+# Functional Programing 
+
+
 # PET_Project_19
 
 ### Clean Code 
