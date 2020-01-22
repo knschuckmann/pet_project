@@ -24,7 +24,8 @@ Improved code climate from F to D
 [![Maintainability](https://api.codeclimate.com/v1/badges/883bec08099168100c99/maintainability)](https://codeclimate.com/github/knschuckmann/pet_project/maintainability)
 # Clean Code
 My clean code principles are based on the 'clean code cheat sheet', which can be found here: [Link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf)
-[Example 1](https://github.com/knschuckmann/pet_project/blob/master/play.py#L30)
+
+[[Example 1]](https://github.com/knschuckmann/pet_project/blob/master/play.py#L30) Some text 
 [Example 2]
 [Example 3]
 [Example 4]
