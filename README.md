@@ -28,8 +28,11 @@ My clean code principles are based on the 'clean code cheat sheet', which can be
 [[Example 1]](https://github.com/knschuckmann/pet_project/blob/master/play.py#L30) Some text
 
 [[Example 2]]()
+
 [[Example 3]]()
+
 [[Example 4]]()
+
 [[Example 5]]()
 
 # Dsl
