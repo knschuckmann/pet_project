@@ -1,4 +1,4 @@
-# Pet Project for Advanced Software Engineering WS 2018/19
+# Pet Project for Advanced Software Engineering WS 2019/20
 This Pet project was inspired by a tic tac toe game from this particular website <https://inventwithpython.com/chapter10.html>. It is based on a simple model and the evaluation of human kind playing this game over the time. Thus the turn of computer follows this findings. In this documentation I will show UML diagrams and some metrics for the code, as well as some clean code concepts.
 
 # UML Diagrams
@@ -12,6 +12,7 @@ Starting with UML diagrams. I created three of them, one for the game flow, one 
 
 # Metrics
 Using sonarqube I could improve the code quality. One can see the changed code in the following Link.
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=knschuckmann_pet_project&metric=alert_status)](https://sonarcloud.io/dashboard?id=knschuckmann_pet_project)
 
 # Travis CI
@@ -19,10 +20,8 @@ Continious Integration is allways usefull. In this particular case it was used f
 [![Build Status](https://travis-ci.com/knschuckmann/pet_project.svg?branch=master)](https://travis-ci.com/knschuckmann/pet_project)
 
 # Code Climate
-[![Maintainability](https://api.codeclimate.com/v1/badges/883bec08099168100c99/maintainability)](https://codeclimate.com/github/knschuckmann/pet_project/maintainability)
-
 Improved code climate from F to D
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/883bec08099168100c99/maintainability)](https://codeclimate.com/github/knschuckmann/pet_project/maintainability)
 # Clean Code
 
 # Dsl
