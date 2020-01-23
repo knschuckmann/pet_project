@@ -21,6 +21,7 @@ Continious Integration is allways usefull. In this particular case it was used f
 
 # Code Climate
 Improved code climate from F to D
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/883bec08099168100c99/maintainability)](https://codeclimate.com/github/knschuckmann/pet_project/maintainability)
 # Clean Code
 My clean code principles are based on the 'clean code cheat sheet', which can be found here: [Link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf)
