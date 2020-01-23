@@ -25,15 +25,15 @@ Improved code climate from F to D
 # Clean Code
 My clean code principles are based on the 'clean code cheat sheet', which can be found here: [Link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf)
 
-[[Example 1]](https://github.com/knschuckmann/pet_project/blob/master/play.py#L30) Some text
+[[Example 1]](https://github.com/knschuckmann/pet_project/blob/master/play.py#L35) General and Understandability
 
-[[Example 2]]()
+[[Example 2]](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L12) Class Design
 
-[[Example 3]]()
+[[Example 3]](https://github.com/knschuckmann/pet_project/blob/master/play.py) KISS (keep it simple, stupid)
 
-[[Example 4]]()
+[[Example 4]](https://github.com/knschuckmann/pet_project/blob/master/play.py) DRY (dont repeat yourself)
 
-[[Example 5]]()
+[[Example 5]](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L64) Methods
 
 # Dsl
 
