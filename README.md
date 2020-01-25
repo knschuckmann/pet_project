@@ -36,6 +36,13 @@ My clean code principles are based on the 'clean code cheat sheet', which can be
 
 [[Example 5]](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L64) Methods
 
+# IDE Shortcuts
+
+I am using Spyder IDE. Since it comes with Anaconda it is very distributed even though the funding stoped recently. Thus threre was an update to Spyder 4.0 so even though the funding stopped, the development of Spyder IDE continues.
+
+My favourite Shortcuts are:
+
+
 # Dsl
 
 # Functional Programing 
