@@ -47,9 +47,14 @@ My favourite Shortcuts in Mac OS are:
 # Dsl
 
 # Functional Programing 
+
 [only final data structures](https://github.com/knschuckmann/pet_project/blob/master/play.py#L13) 
+
 [(mostly) side effect free functions](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L129) 
+
 [the use of higher order functions](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L136) 
+
 [functions as parameters and return values](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L136) 
+
 [use clojures / anonymous functions](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L32) 
 
