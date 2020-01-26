@@ -45,7 +45,7 @@ My favourite Shortcuts in Mac OS are:
 - self designed shortcut to run one line by alt + space
 
 # Dsl
-Even thogh Domain Specific Language (DSL) does not contibute to my project, I created a small code snipped that can be found here and does exemplify the function of DSL's: [dsl_script.py]()
+Even thogh Domain Specific Language (DSL) does not contibute to my project, I created a small code snipped that can be found here and does exemplify the function of DSL's: [dsl_script.py](https://github.com/knschuckmann/pet_project/blob/master/DSL/dsl_script.py)
 
 # Functional Programing 
 
