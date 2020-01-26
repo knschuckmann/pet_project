@@ -61,7 +61,7 @@ class TicTacToeGame(object):
     ####################### METHODS ####################### 
     
     # whos turn is it and decide which letter player has
-    def turn_and_letter_decission(self,):
+    def turn_and_letter_decission(self):
         # Randomly choose the player who goes first.
         # first in list is toss winner
         if random.randint(0,1)  == 1:
