@@ -47,6 +47,8 @@ My favourite Shortcuts in Mac OS are:
 # Dsl
 Even thogh Domain Specific Language (DSL) does not contibute to my project, I created a small code snipped that can be found here and does exemplify the function of DSL's: [dsl_script.py](https://github.com/knschuckmann/pet_project/blob/master/DSL/dsl_script.py)
 
+This is a self written DSL and could be applied to any written script as a parser with some minor changes.
+
 # Functional Programing 
 
 [only final data structures](https://github.com/knschuckmann/pet_project/blob/master/play.py#L13) 
