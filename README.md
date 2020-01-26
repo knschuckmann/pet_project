@@ -40,11 +40,16 @@ My clean code principles are based on the 'clean code cheat sheet', which can be
 
 I am using Spyder IDE. Since it comes with Anaconda it is very distributed even though the funding stoped recently. Thus threre was an update to Spyder 4.0 so even though the funding stopped, the development of Spyder IDE continues.
 
-My favourite Shortcuts are:
-
+My favourite Shortcuts in Mac OS are:
+- CMD + 1 to uncomment some lines of code 
+- self designed shortcut to run one line by alt + space
 
 # Dsl
 
 # Functional Programing 
-[functions as parameters and return values]() 
+[only final data structures](https://github.com/knschuckmann/pet_project/blob/master/play.py#L13) 
+[(mostly) side effect free functions](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L129) 
+[the use of higher order functions](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L136) 
+[functions as parameters and return values](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L136) 
+[use clojures / anonymous functions](https://github.com/knschuckmann/pet_project/blob/master/TicTacToe_Game.py#L32) 
 
